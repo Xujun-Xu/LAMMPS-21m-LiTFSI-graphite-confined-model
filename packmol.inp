@@ -1,0 +1,28 @@
+tolerance 2.0
+filetype pdb
+output solvation.pdb
+
+structure TFSI.pdb
+    number 83
+    inside box 0.0 1.0 -28.0 20.0 20.0 28.0
+end structure
+
+structure Li.pdb
+    number 83
+    inside box 0.0 1.0 -28.0 20.0 20.0 28.0
+end structure
+
+structure SPCFW.pdb
+    number 220
+    inside box 0.0 1.0 -28.0 20.0 20.0 28.0
+end structure
+
+structure graphite.pdb
+    number 1
+    fixed 0.0 0.0 30.0 0.0 0.0 0.0
+end structure
+
+structure graphite.pdb
+    number 1
+    fixed 0.0 0.0 -46.75 0.0 0.0 0.0
+end structure

@@ -1,0 +1,16 @@
+import "TFSI.lt"
+import "Li.lt"
+import "SPCFW.lt"
+import "graphite.lt"
+
+sol_tfsi = new TFSI [83]
+sol_li   = new Li [83]
+sol_wat  = new SPCFW [220]
+electrode_top = new Graphite [1]
+electrode_bot = new Graphite [1]
+
+write_once("Data Boundary") {
+      -1.22976  20.90586  xlo xhi
+      0.00000   21.30000  ylo yhi
+      -50.00000 50.00000  zlo zhi
+}

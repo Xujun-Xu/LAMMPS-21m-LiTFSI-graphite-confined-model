@@ -1,0 +1,146 @@
+# Created by AuToFF
+
+TFSI {
+
+  write("Data Atoms") {
+    $atom:N01      $mol:TFSI     @atom:n2               0     1.173600     0.163500    -0.214900
+    $atom:S02      $mol:TFSI     @atom:sy               0     0.504300    -0.244200    -1.593600
+    $atom:S03      $mol:TFSI     @atom:sy               0     2.757700     0.145200    -0.282300
+    $atom:C04      $mol:TFSI     @atom:c3               0     3.091600     0.602900     1.466300
+    $atom:C05      $mol:TFSI     @atom:c3               0    -1.253700    -0.069300    -1.084000
+    $atom:F06      $mol:TFSI     @atom:f                0     1.950100     0.788700     2.198800
+    $atom:F07      $mol:TFSI     @atom:f                0     3.809100    -0.346100     2.138300
+    $atom:F08      $mol:TFSI     @atom:f                0     3.798900     1.765900     1.587100
+    $atom:F09      $mol:TFSI     @atom:f                0    -1.398900     0.246500     0.240200
+    $atom:F0A      $mol:TFSI     @atom:f                0    -1.911700     0.911900    -1.770100
+    $atom:F0B      $mol:TFSI     @atom:f                0    -1.978800    -1.211700    -1.271100
+    $atom:O0C      $mol:TFSI     @atom:o                0     3.382300    -1.169300    -0.447600
+    $atom:O0D      $mol:TFSI     @atom:o                0     0.667900     0.707000    -2.695700
+    $atom:O0E      $mol:TFSI     @atom:o                0     0.639400    -1.651200    -1.980500
+    $atom:O0F      $mol:TFSI     @atom:o                0     3.377600     1.214500    -1.071700
+  }
+
+  write_once("Data Masses") {
+    @atom:n2                14.0100
+    @atom:sy                32.0600
+    @atom:c3                12.0100
+    @atom:f                 19.0000
+    @atom:o                 16.0000
+  }
+
+  write("Data Bonds") {
+    $bond:1      @bond:B1      $atom:N01      $atom:S02     
+    $bond:2      @bond:B1      $atom:N01      $atom:S03     
+    $bond:3      @bond:B2      $atom:S03      $atom:C04     
+    $bond:4      @bond:B2      $atom:S02      $atom:C05     
+    $bond:5      @bond:B3      $atom:C04      $atom:F06     
+    $bond:6      @bond:B3      $atom:C04      $atom:F07     
+    $bond:7      @bond:B3      $atom:C04      $atom:F08     
+    $bond:8      @bond:B3      $atom:C05      $atom:F09     
+    $bond:9      @bond:B3      $atom:C05      $atom:F0A     
+    $bond:10     @bond:B3      $atom:C05      $atom:F0B     
+    $bond:11     @bond:B4      $atom:S03      $atom:O0C     
+    $bond:12     @bond:B4      $atom:S02      $atom:O0D     
+    $bond:13     @bond:B4      $atom:S02      $atom:O0E     
+    $bond:14     @bond:B4      $atom:S03      $atom:O0F     
+  }
+
+  write("Data Angles") {
+    $angle:1      @angle:A1      $atom:S02      $atom:N01      $atom:S03     
+    $angle:2      @angle:A2      $atom:N01      $atom:S02      $atom:C05     
+    $angle:3      @angle:A3      $atom:N01      $atom:S02      $atom:O0D     
+    $angle:4      @angle:A3      $atom:N01      $atom:S02      $atom:O0E     
+    $angle:5      @angle:A4      $atom:C05      $atom:S02      $atom:O0D     
+    $angle:6      @angle:A4      $atom:C05      $atom:S02      $atom:O0E     
+    $angle:7      @angle:A5      $atom:O0D      $atom:S02      $atom:O0E     
+    $angle:8      @angle:A2      $atom:N01      $atom:S03      $atom:C04     
+    $angle:9      @angle:A3      $atom:N01      $atom:S03      $atom:O0C     
+    $angle:10     @angle:A3      $atom:N01      $atom:S03      $atom:O0F     
+    $angle:11     @angle:A4      $atom:C04      $atom:S03      $atom:O0C     
+    $angle:12     @angle:A4      $atom:C04      $atom:S03      $atom:O0F     
+    $angle:13     @angle:A5      $atom:O0C      $atom:S03      $atom:O0F     
+    $angle:14     @angle:A6      $atom:S03      $atom:C04      $atom:F06     
+    $angle:15     @angle:A6      $atom:S03      $atom:C04      $atom:F07     
+    $angle:16     @angle:A6      $atom:S03      $atom:C04      $atom:F08     
+    $angle:17     @angle:A7      $atom:F06      $atom:C04      $atom:F07     
+    $angle:18     @angle:A7      $atom:F06      $atom:C04      $atom:F08     
+    $angle:19     @angle:A7      $atom:F07      $atom:C04      $atom:F08     
+    $angle:20     @angle:A6      $atom:S02      $atom:C05      $atom:F09     
+    $angle:21     @angle:A6      $atom:S02      $atom:C05      $atom:F0A     
+    $angle:22     @angle:A6      $atom:S02      $atom:C05      $atom:F0B     
+    $angle:23     @angle:A7      $atom:F09      $atom:C05      $atom:F0A     
+    $angle:24     @angle:A7      $atom:F09      $atom:C05      $atom:F0B     
+    $angle:25     @angle:A7      $atom:F0A      $atom:C05      $atom:F0B     
+  }
+
+  write("Data Dihedrals") {
+  
+    $dihedral:1     @dihedral:D1   $atom:C05   $atom:S02   $atom:N01   $atom:S03
+    $dihedral:2     @dihedral:D1   $atom:O0D   $atom:S02   $atom:N01   $atom:S03
+    $dihedral:3     @dihedral:D1   $atom:O0E   $atom:S02   $atom:N01   $atom:S03
+    $dihedral:4     @dihedral:D1   $atom:C04   $atom:S03   $atom:N01   $atom:S02
+    $dihedral:5     @dihedral:D1   $atom:O0C   $atom:S03   $atom:N01   $atom:S02
+    $dihedral:6     @dihedral:D1   $atom:O0F   $atom:S03   $atom:N01   $atom:S02
+    $dihedral:7     @dihedral:D2   $atom:O0D   $atom:S02   $atom:C05   $atom:F09
+    $dihedral:8     @dihedral:D2   $atom:O0D   $atom:S02   $atom:C05   $atom:F0A
+    $dihedral:9     @dihedral:D2   $atom:O0D   $atom:S02   $atom:C05   $atom:F0B
+    $dihedral:10    @dihedral:D2   $atom:O0E   $atom:S02   $atom:C05   $atom:F09
+    $dihedral:11    @dihedral:D2   $atom:O0E   $atom:S02   $atom:C05   $atom:F0A
+    $dihedral:12    @dihedral:D2   $atom:O0E   $atom:S02   $atom:C05   $atom:F0B
+    $dihedral:13    @dihedral:D2   $atom:O0C   $atom:S03   $atom:C04   $atom:F06
+    $dihedral:14    @dihedral:D2   $atom:O0C   $atom:S03   $atom:C04   $atom:F07
+    $dihedral:15    @dihedral:D2   $atom:O0C   $atom:S03   $atom:C04   $atom:F08
+    $dihedral:16    @dihedral:D2   $atom:O0F   $atom:S03   $atom:C04   $atom:F06
+    $dihedral:17    @dihedral:D2   $atom:O0F   $atom:S03   $atom:C04   $atom:F07
+    $dihedral:18    @dihedral:D2   $atom:O0F   $atom:S03   $atom:C04   $atom:F08
+    $dihedral:19    @dihedral:D2   $atom:F06   $atom:C04   $atom:S03   $atom:N01
+    $dihedral:20    @dihedral:D2   $atom:F07   $atom:C04   $atom:S03   $atom:N01
+    $dihedral:21    @dihedral:D2   $atom:F08   $atom:C04   $atom:S03   $atom:N01
+    $dihedral:22    @dihedral:D2   $atom:F09   $atom:C05   $atom:S02   $atom:N01
+    $dihedral:23    @dihedral:D2   $atom:F0A   $atom:C05   $atom:S02   $atom:N01
+    $dihedral:24    @dihedral:D2   $atom:F0B   $atom:C05   $atom:S02   $atom:N01
+  }
+
+  write_once("In Settings") {
+    # -- Non-bonded interactions --(eV)
+    pair_coeff      @atom:n2           @atom:n2             0.007372   3.250000
+    pair_coeff      @atom:sy           @atom:sy             0.010841   3.563595
+    pair_coeff      @atom:c3           @atom:c3             0.004744   3.399670
+    pair_coeff      @atom:f            @atom:f              0.002645   3.118146
+    pair_coeff      @atom:o            @atom:o              0.009106   2.960000
+
+    # -- harmonic bondType parameter  --
+    # K (eV/Angstrom^2), r0 (Angstrom)
+    bond_coeff      @bond:B1               22.2979    1.752
+    bond_coeff      @bond:B2               21.5866    1.782
+    bond_coeff      @bond:B3               31.5517    1.344
+    bond_coeff      @bond:B4               42.7570    1.466
+
+    # -- harmonic angleType parameter  --
+    # K (eV/rad^2), theta0 (degree)
+    angle_coeff     @angle:A1               4.757900  119.180000
+    angle_coeff     @angle:A2               1.709420  103.120000
+    angle_coeff     @angle:A3               1.869010  107.060000
+    angle_coeff     @angle:A4               1.789850  108.480000
+    angle_coeff     @angle:A5               1.964400	121.880000
+    angle_coeff     @angle:A6               3.522000	109.670000
+    angle_coeff     @angle:A7               3.089240	107.160000
+
+    # D1: S-N 主骨架二面角;D2: S-C 侧链二面角 
+    dihedral_coeff  @dihedral:D1  2  0.021682 3 180  0.294875 1 180
+    dihedral_coeff  @dihedral:D2  1  0.006244 3 0
+  }
+
+  write_once("In Init") {
+    units           metal
+    boundary        p p p
+    atom_style      full
+    pair_style      lj/cut/coul/long 10.0
+    pair_modify     mix arithmetic
+    special_bonds   lj 0.0 0.0 0.5 coul 0.0 0.0 0.8333
+    kspace_style    pppm 1.0e-4
+    bond_style      harmonic
+    angle_style     harmonic
+    dihedral_style  fourier
+  }
+}

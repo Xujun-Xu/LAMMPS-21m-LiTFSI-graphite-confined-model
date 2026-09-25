@@ -1,0 +1,27 @@
+# Created by AuToFF
+
+Li {
+
+  write("Data Atoms") {
+    $atom:Li01     $mol:Li       @atom:opls_404   0.0     0.939700    -0.072600     0.033000
+  }
+
+  write_once("Data Masses") {
+    @atom:opls_404           6.9410
+  }
+
+  write_once("In Settings") {
+    # -- Non-bonded interactions --
+    pair_coeff      @atom:opls_404     @atom:opls_404    0.0117528   1.259920
+  }
+
+  write_once("In Init") {
+    units           metal
+    boundary        p p p
+    atom_style      full
+    pair_style      lj/cut/coul/long 10.0
+    pair_modify     mix geometric
+    special_bonds   lj/coul 0.0 0.0 0.5
+    kspace_style    pppm 1.0e-4
+  }
+}
